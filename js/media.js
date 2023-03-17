@@ -20,7 +20,7 @@ function calcularMedia() {
   let mensagem = "";
   // evite mexer no código acima!
 
-  const calcularMedia = (nota1 + note2 + note3 + note4)/2;
+  const calcularMedia = (nota1 + note2 + note3 + note4)/4;
 
     if (calcularMedia == 0){
         alert("Infelizmente você zerou a prova :( ");
