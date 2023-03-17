@@ -4,6 +4,14 @@ function somar() {
   // evite mexer no código acima!
 
   const resultado = numero1 + numero2;
+  
+   if(resultado >= 7)
+      if(resultado==10)
+       alert("Uau! Aprovado com distin��o");
+      else
+       alert("Parabens, aprovado! Media "+ resultado);
+     else
+      alert("Reprovado!")
 
   /* use as constantes numero 1 e numero 2 e realize a soma entre elas.
   Em seguida, ao invés de mostrar o numero 10, mostre o resultado da operação */
