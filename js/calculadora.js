@@ -4,14 +4,6 @@ function somar() {
   // evite mexer no código acima!
 
   const resultado = numero1 + numero2;
-  
-   if(resultado >= 7)
-      if(resultado==10)
-       alert("Uau! Aprovado com distin��o");
-      else
-       alert("Parabens, aprovado! Media "+ resultado);
-     else
-      alert("Reprovado!")
 
   /* use as constantes numero 1 e numero 2 e realize a soma entre elas.
   Em seguida, ao invés de mostrar o numero 10, mostre o resultado da operação */
@@ -53,3 +45,19 @@ function dividir() {
    Em seguida, ao invés de mostrar o numero -89, mostre o resultado da operação */
   document.getElementById("resultadoDiv").innerHTML = resultado;
 }
+
+function media(){
+     let nota1 = parseFloat(document.getElementById("nota1").value);
+     let nota2 = parseFloat(document.getElementById("nota2").value);
+
+     let media = (nota1 + nota2)/2 ;
+
+     if(media >= 7)
+      if(media==10)
+       alert("Uau! Aprovado com distin��o");
+      else
+       alert("Parabens, aprovado! Media "+media);
+     else
+      alert("Reprovado!")
+
+    }
