@@ -22,7 +22,7 @@ function calcularMedia() {
   
     const calcularMedia = (nota1 + note2 + note3 + note4)/4;
     
-    if (nota1 && note2 && note3 && note4 <0 || nota1 && note2 && note3 && note4 >10){
+   if (nota1 || note2 || note3 || note4 <0 || nota1 && note2 && note3 && note4 >10){
         alert ("Nota inserida errada.");
     } else {
     if (calcularMedia == 0){
