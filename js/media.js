@@ -22,7 +22,7 @@ function calcularMedia() {
   
     const calcularMedia = (nota1 + note2 + note3 + note4)/4;
     
-    if(nota1 || note2 || note3 || note4 <0 ){
+    if(nota1 && note2 && note3 && note4 <0 ){
         alert ("A nota informada é menor que 0. Insira uma nota que seja maior ou igual que 0.")
     } else if (nota1 || note2 || note3 || note4 >10){
         alert ("A nota informada é maior que 10. Insira uma nota que seja menor ou igual que 10.")
