@@ -22,8 +22,10 @@ function calcularMedia() {
   
     const calcularMedia = (nota1 + note2 + note3 + note4)/4;
     
-   if (nota1 || note2 || note3 || note4 <0 || nota1 && note2 && note3 && note4 >10){
-        alert ("Nota inserida errada.");
+  if (nota1 <0 || nota1 >10){
+        alert ("Nota 1 inserida errada.Tente novamente.");
+    } else if (note2 <0 || note2 >10){
+        alert ("Nota 1 inserida errada.Tente novamente.");
     } else {
     if (calcularMedia == 0){
         alert("Infelizmente você zerou a prova :( ");
