@@ -25,14 +25,13 @@ const calcularMedia = (nota1 + note2 + note3 + note4) / 4;
   
     if(calcularMedia==0){
       alert ("Infelizmente você zerou a prova :c");
-   }
-    else if(calcularMedia>=0.1 && calcularMedia<=3){
-      alert ("Caramba, deu ruim, você obteve media" + calcularMedia + "! Estude mais e tente novamente");
+   } else if(calcularMedia>0 && calcularMedia<3){
+      alert ("Caramba, deu ruim, você obteve media " + calcularMedia + " Estude mais e tente novamente");
 } 
     else if(calcularMedia>=3.1 && calcularMedia<=5.9){
      alert ("Você obteve media" + calcularMedia +"! Falta pouco para a média.");
 } 
-    else if(calcularMedia==6 && calcularMedia==7){
+    else if(calcularMedia>=6 && calcularMedia<=7){
      alert ("Você está na média com " + calcularMedia);
 } 
     else if(calcularMedia>=7.1 && calcularMedia<=9.9){
