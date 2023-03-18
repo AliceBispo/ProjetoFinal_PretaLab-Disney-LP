@@ -12,41 +12,36 @@
       "Hoje é seu aniversário? Pq você ta de parabéns! 10 de média"
 */
 function calcularMedia() {
-  const nota1 = parseFloat(document.getElementById("nota1").value);
-  const note2 = parseFloat(document.getElementById("nota2").value);
-  const note3 = parseFloat(document.getElementById("nota3").value);
-  const note4 = parseFloat(document.getElementById("nota4").value);
-
-  let mensagem = ""; 
-
-  // evite mexer no código acima!
-
-const calcularMedia = (nota1 + note2 + note3 + note4) / 4;
+    const nota1 = parseFloat(document.getElementById("nota1").value);
+    const note2 = parseFloat(document.getElementById("nota2").value);
+    const note3 = parseFloat(document.getElementById("nota3").value);
+    const note4 = parseFloat(document.getElementById("nota4").value);
   
-    if(calcularMedia==0){
-      pronpt ("Infelizmente você zerou a prova :c");
-   } else if(calcularMedia>0 && calcularMedia<3){
-      alert ("Caramba, deu ruim, você obteve media " + calcularMedia + " Estude mais e tente novamente");
-} 
-    else if(calcularMedia>=3.1 && calcularMedia<=5.9){
-     alert ("Você obteve media" + calcularMedia +"! Falta pouco para a média.");
-} 
-    else if(calcularMedia>=6 && calcularMedia<=7){
-     alert ("Você está na média com " + calcularMedia);
-} 
-    else if(calcularMedia>=7.1 && calcularMedia<=9.9){
-     alert ("Notão! Sua média é " + calcularMedia + "!");
-} 
-    else if(calcularMedia==10){
-     alert ("Hoje é seu aniversário? Pq você ta de parabéns! 10 de média");
-} 
-    else {
-     alert ("As notas informadas estão erradas");
-}   
+    let mensagem = "";
+    // evite mexer no código acima!
   
+    const calcularMedia = (nota1 + note2 + note3 + note4)/4;
+    
+    if(nota1 && note2 && note3 && note4 <0 || nota1 && note2 && note3 && note4 >10 ){
+        alert ("A nota informada está errado ou não é compatível. Insira uma nota que seja maior que 0 e menor que 10.")
+    } else {
+    if (calcularMedia == 0){
+        alert("Infelizmente você zerou a prova :( ");
+    } else if (calcularMedia > 0 && calcularMedia < 3 ){
+        alert( "Caramba, deu ruim, você obteve media " + calcularMedia + "Estude mais e tente novamente!");
+    } else if (calcularMedia > 3 && calcularMedia < 6){
+        alert( "Você obteve media " + calcularMedia + "Falta pouco para a média.");
+    } else if (calcularMedia >= 6 && calcularMedia <= 7){
+        alert("Você está na média com " + calcularMedia);
+    } else if (calcularMedia > 7 && calcularMedia <10){
+        alert("Notão! Sua média é " + calcularMedia );
+    } else{
+        alert ("Hoje é seu aniversário? Pq você ta de parabéns! 10 de média")
+    }
+    }
   
-  // evite mexer na linha de código abaixo!
-  document.getElementById("situacaoAluno").innerHTML = mensagem;
-}
+    // evite mexer na linha de código abaixo!
+    document.getElementById("situacaoAluno").innerHTML = mensagem;
+  }
 
 
