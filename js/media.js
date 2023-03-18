@@ -22,7 +22,9 @@ function calcularMedia() {
   
     const calcularMedia = (nota1 + note2 + note3 + note4)/4;
     
-    while (nota1 && note2 && note3 && note4 >=0 || nota1 && note2 && note3 && note4 <=10){
+    if (nota1 && note2 && note3 && note4 <0 || nota1 && note2 && note3 && note4 >10){
+        alert ("Nota inserida errada.");
+    } else {
     if (calcularMedia == 0){
         alert("Infelizmente você zerou a prova :( ");
     } else if (calcularMedia > 0 && calcularMedia < 3 ){
@@ -36,7 +38,7 @@ function calcularMedia() {
     } else{
         alert ("Hoje é seu aniversário? Pq você ta de parabéns! 10 de média")
     }
-    } alert ("Nota inserida errada.")
+    } 
   
     // evite mexer na linha de código abaixo!
     document.getElementById("situacaoAluno").innerHTML = mensagem;
