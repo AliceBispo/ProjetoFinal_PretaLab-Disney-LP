@@ -23,13 +23,13 @@ function calcularMedia() {
     const calcularMedia = (nota1 + note2 + note3 + note4)/4;
     
   if (nota1 <0 || nota1 >10){
-        alert ("Nota 1 inserida errada.Tente novamente.");
+        alert ("Nota 1 inserida errada. Tente novamente.");
     } else if (note2 <0 || note2 >10){
-        alert ("Nota 2 inserida errada.Tente novamente.");
+        alert ("Nota 2 inserida errada. Tente novamente.");
     } else if (note3 <0 || note3 >10){
-        alert ("Nota 3 inserida errada.Tente novamente.");
+        alert ("Nota 3 inserida errada. Tente novamente.");
     } else if (note4 <0 || note4 >10){
-        alert ("Nota 4 inserida errada.Tente novamente.");
+        alert ("Nota 4 inserida errada. Tente novamente.");
     } else {
     if (calcularMedia == 0){
         alert("Infelizmente você zerou a prova :( ");
