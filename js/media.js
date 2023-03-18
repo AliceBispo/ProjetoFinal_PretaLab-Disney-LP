@@ -44,8 +44,4 @@ function calcularMedia() {
     document.getElementById("situacaoAluno").innerHTML = mensagem;
   }
   
-    // evite mexer na linha de código abaixo!
-    document.getElementById("situacaoAluno").innerHTML = mensagem;
-  }
-
 
