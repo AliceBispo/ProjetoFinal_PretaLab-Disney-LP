@@ -25,14 +25,18 @@ function calcularMedia() {
   if (nota1 <0 || nota1 >10){
         alert ("Nota 1 inserida errada.Tente novamente.");
     } else if (note2 <0 || note2 >10){
-        alert ("Nota 1 inserida errada.Tente novamente.");
+        alert ("Nota 2 inserida errada.Tente novamente.");
+    } else if (note3 <0 || note3 >10){
+        alert ("Nota 3 inserida errada.Tente novamente.");
+    } else if (note4 <0 || note4 >10){
+        alert ("Nota 4 inserida errada.Tente novamente.");
     } else {
     if (calcularMedia == 0){
         alert("Infelizmente você zerou a prova :( ");
-    } else if (calcularMedia > 0 && calcularMedia < 3 ){
-        alert( "Caramba, deu ruim, você obteve media  " + calcularMedia + ".Estude mais e tente novamente!");
+    } else if (calcularMedia > 0 && calcularMedia <= 3 ){
+        alert( "Caramba, deu ruim, você obteve media  " + calcularMedia + ". Estude mais e tente novamente!");
     } else if (calcularMedia > 3 && calcularMedia < 6){
-        alert( "Você obteve media  " + calcularMedia + ".Falta pouco para a média.");
+        alert( "Você obteve media  " + calcularMedia + ". Falta pouco para a média.");
     } else if (calcularMedia >= 6 && calcularMedia <= 7){
         alert("Você está na média com  " + calcularMedia + ".");
     } else if (calcularMedia > 7 && calcularMedia <10){
@@ -45,5 +49,4 @@ function calcularMedia() {
     // evite mexer na linha de código abaixo!
     document.getElementById("situacaoAluno").innerHTML = mensagem;
   }
-
 
